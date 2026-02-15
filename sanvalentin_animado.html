@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>¿Quieres ser mi San Valentín amor mio? 💖</title>
+
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #ff9ecf, #ffc3e6);
+    text-align: center;
+    overflow-x: hidden;
+}
+
+h1 {
+    margin-top: 60px;
+    font-size: 40px;
+    color: white;
+    animation: aparecer 2s ease-in-out;
+}
+
+button {
+    padding: 12px 25px;
+    margin: 15px;
+    font-size: 18px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.3s;
+}
+
+#si {
+    background-color: #ff4d88;
+    color: white;
+}
+
+#no {
+    background-color: #444;
+    color: white;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+#segura {
+    display: none;
+    font-size: 28px;
+    color: white;
+    animation: parpadeo 1s infinite alternate;
+}
+
+#galeria {
+    display: none;
+    margin-top: 40px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    animation: aparecer 1.5s ease-in-out;
+}
+
+img {
+    width: 250px;
+    border-radius: 15px;
+    margin: 10px;
+    transition: transform 0.3s;
+}
+
+img:hover {
+    transform: scale(1.05);
+}
+
+@keyframes aparecer {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes parpadeo {
+    from { opacity: 0.4; }
+    to { opacity: 1; }
+}
+</style>
+</head>
+
+<body>
+
+<h1 id="pregunta">¿Quieres ser mi San Valentín? 💘</h1>
+
+<div id="botones">
+    <button id="si" onclick="aceptar()">Sí 💖</button>
+    <button id="no" onclick="rechazar()">No 😢</button>
+</div>
+
+<p id="segura">¿Segura???? 😳</p>
+
+<div id="galeria">
+    <h2>💞 Nuestro menú de recuerdos.Teamooooooo 💞</h2>
+    <p>Gracias por decir que sí :333 ❤️</p>
+    <img src="foto1.jpg" alt="Foto 1">
+    <img src="foto2.jpg" alt="Foto 2">
+    <img src="foto3.jpg" alt="Foto 3">
+    <img src="foto4.jpg" alt="Foto 4">
+    <p>a pesar de todas las cosas que hemos vivido juntos, yo nunca he dejado de amarte y prometo seguir toda la vida contigo hasta que a ambos seamos viejos :3333💕</p>
+    <img src="foto5.jpeg" alt="Foto 5">
+    <img src="foto6.jpg" alt="Foto 6">
+    <p> Sin importar que siempre unidos en las buenas y en las malas, siempre estaré contigo hasta el final de nuestros días ❤️</p>
+    <img src="foto7.jpg" alt="Foto 7">
+     <img src="foto8.jpg" alt="Foto 8">
+     <p> Te amo con todo mi corazón y espero que podamos seguir creando recuerdos juntos por siempre 💖</p>
+</div>
+
+<script>
+function aceptar() {
+    document.getElementById("botones").style.display = "none";
+    document.getElementById("segura").style.display = "none";
+    document.getElementById("galeria").style.display = "block";
+}
+
+function rechazar() {
+    document.getElementById("segura").style.display = "block";
+}
+</script>
+
+</body>
+</html>
